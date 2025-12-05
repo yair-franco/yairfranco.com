@@ -39,16 +39,71 @@
         <h1 class="secTitle">AGU 2025 SUPPLEMENTAL CONTENT</h1>
 
         <div class="sectCont rounded center-column">
-            <h2>SeisSol animations for the simulations plotted in the poster will be available here.</h2>
-        </div>
-
-        <div class="sectCont rounded center-column">
-            <a class="rounded center-row" href="./franco_agu25.pdf">Click to download poster as PDF</a>   
-            <button id="showPoster" style="font-size: 48px;">Click to view poster</button>
+            <h2>Poster</h2>
+            <a class="rounded center-row" href="./franco_agu25.pdf">Click to download as PDF</a>   
+            <button id="showPoster" style="font-size: 36px;">Click to view poster</button>
         </div>
 
         <p id="rec" style="display: none;">(Landscape mode recommended)</p>
-        <iframe id="posterFrame" data-src="franco_agu25.pdf", width="95%" height="400px" style="display: none;"></iframe>
+        <iframe id="posterFrame" 
+                data-src="franco_agu25.pdf" 
+                width="95%" height="400px" 
+                style="display: none;"
+        ></iframe>
+
+        <div class="sectCont rounded center-column">
+            <h2>SeisSol simulation animations</h2>
+            <button id="showEmbeds">Click to show video embeds</button>
+            <p class="caption">Base TPV10 simulation (60° dip normal fault)</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/Vts2BPSaAEY"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">60° dip reverse fault</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/7OVMbV-DQLM"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">25° dip normal fault</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/mi9SPyXZCH0"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">75° dip normal fault</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/DBW-fpQuIz4"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">25° dip reverse fault</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/IfYYBBCB69E"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">75° dip reverse fault</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/xt5ntq8BAfg"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">Comparison of low-angle (25°) normal vs. reverse slip</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/teTygVBFDYo"
+                    style="display: none;"
+            ></iframe>
+
+            <p class="caption">Comparison of high-angle (75°) normal vs. reverse slip</p>
+            <iframe class="yt"
+                    data-src="https://youtube.com/embed/QN5r8pTUlTY"
+                    style="display: none;"
+            ></iframe>
+        </div>
+
+        
     </div>
     <div class="footer">
         <p id="lastUpdate"></p>

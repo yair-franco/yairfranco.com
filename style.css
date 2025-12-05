@@ -45,6 +45,10 @@ caption {
     font-size: 12px;
 }
 
+iframe {
+    height: 360px;
+    width: 640px;
+}
 
 .topCont {
     top: 0;
@@ -187,4 +191,11 @@ caption {
     margin: 3px 0px;
     text-align: justify;
     text-justify: inter-word;
+}
+
+/* Poster stylings below here */
+
+#posterFrame {
+    height: 600px;
+    width: 95%;
 }

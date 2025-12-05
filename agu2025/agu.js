@@ -1,4 +1,6 @@
 $(function() {
+    $("#showEmbeds").one("click", showEmbeds);
+
     $("#showPoster").one("click", showPoster);
 
     o.onchange = function() {
@@ -19,6 +21,17 @@ const o = window.screen.orientation;
 function isMobileDevice() {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
     return /android|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+}
+
+function showEmbeds() {
+    const emb = $(".yt")
+    if (!emb.attr("src")) emb.attr("src", emb.data("src"));
+    emb.toggle();
+    $("#showEmbeds")
+        .html("Click to toggle embeds")
+        .on("click", function(){
+            emb.toggle();
+        });
 }
 
 function showPoster() {
