@@ -3,6 +3,11 @@ $(function() {
 
     $("#showPoster").one("click", showPoster);
 
+    if (isMobileDevice()) {
+        $("#showPoster").hide();
+        $("#downloadPoster").html("Click to view and download poster (mobile)");
+    }
+
     o.onchange = function() {
         if (isMobileDevice()){
             if (o.type.startsWith('portrait')){
@@ -28,8 +33,7 @@ let obj;
 function showEmbeds() {
     const emb = $(".yt")
     if (!emb.attr("src")) {
-        emb.each((i,obj) => {
-            console.log(obj);
+        emb.each((_,obj) => {
             $(obj).attr("src", $(obj).data("src"));
         });
     }
