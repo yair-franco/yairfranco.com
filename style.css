@@ -123,6 +123,7 @@ iframe {
 
 .linkBox {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px;
 }
@@ -162,6 +163,7 @@ iframe {
 }
 
 .topLink {
+    white-space: nowrap;
     margin: 10px;
 }
 
